@@ -17,23 +17,18 @@ import ServicesSection from '../components/ServicesSection';
 
 import hero1 from "../../public/images/hero1.webp";
 import hero6 from "../../public/images/hero5.webp";
-import hero2 from "../../public/images/hero2.webp";
 import hero3 from "../../public/images/hero3.webp";
 import riversand from "../../public/images/riversand.webp";
 import msand from "../../public/images/m-sand.webp";
 import psand from "../../public/images/p-sand.webp";
 import rockdust from "../../public/images/rockdust.webp";
-import sands1 from "../../public/images/goldensands (1).webp";
 import sands2 from "../../public/images/goldensands (2).webp";
-import sands3 from "../../public/images/goldensands (3).webp";
-import sands4 from "../../public/images/goldensands (4).webp";
 import sands6 from "../../public/images/goldensands (5).webp";
 import Image from 'next/image';
 
 const Home = () => {
   const aboutRef = useRef(null);
   const [showForm, setShowForm] = useState(false);
-  const [expandedAbout, setExpandedAbout] = useState(false);
 
   const heroImages = [hero6, sands2, hero1, hero3];
 
