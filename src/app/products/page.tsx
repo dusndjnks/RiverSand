@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
 import riversand from "../../../public/images/riversand.webp";
@@ -17,7 +18,22 @@ import row2 from "../../../public/images/row2.webp";
 import row1 from "../../../public/images/row1.webp";
 import sands1 from "../../../public/images/goldensands (1).webp";
 
-const products = [
+interface Product {
+  title: string;
+  description: string;
+  image: StaticImageData;
+  uses: string[];
+}
+
+interface FormData {
+  name: string;
+  phone: string;
+  email: string;
+  product: string;
+  message: string;
+}
+
+const products: Product[] = [
   {
     title: 'River Sand',
     description: 'Naturally available sand used for brick work, RCC, and other construction. Washed and filtered for superior quality.',
@@ -65,8 +81,7 @@ const products = [
 export default function ProductPage() {
   const [showForm, setShowForm] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState('');
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
     email: '',
@@ -83,7 +98,6 @@ export default function ProductPage() {
   };
 
   const handleProductClick = (productTitle: string) => {
-    setSelectedProduct(productTitle);
     setFormData(prev => ({
       ...prev,
       product: productTitle
@@ -92,75 +106,65 @@ export default function ProductPage() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  
-  if (!formData.name.trim()) {
-    alert("Please enter your name");
-    return;
-  }
-  
-  if (!formData.phone.trim() || !/^[0-9]{10,15}$/.test(formData.phone.trim())) {
-    alert("Please enter a valid 10-digit phone number");
-    return;
-  }
-
-  setIsSubmitting(true);
-  
-  try {
-    const payload = {
-      ...formData,
-      timestamp: new Date().toISOString()
-    };
-
-    const formDataEncoded = new URLSearchParams();
-    (Object.entries(payload) as [keyof typeof payload, string][]).forEach(([key, value]) => {
-      formDataEncoded.append(key, value);
-    });
-
-    const scriptUrl = "https://script.google.com/macros/s/AKfycbwo7alFZPoohmj2LVge0gGuXzQ3vp5fCufgIU29JtwTLSaIFvmQILSTgiPsRsaUQgyOng/exec";
+    e.preventDefault();
     
-    const response = await fetch(scriptUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: formDataEncoded
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+    if (!formData.name.trim()) {
+      alert("Please enter your name");
+      return;
+    }
+    
+    if (!formData.phone.trim() || !/^[0-9]{10,15}$/.test(formData.phone.trim())) {
+      alert("Please enter a valid 10-digit phone number");
+      return;
     }
 
-    const result = await response.text();
-    console.log("Raw response:", result);
+    setIsSubmitting(true);
     
     try {
-      const data = JSON.parse(result);
-      if (data.result !== "success") {
-        throw new Error(data.message || "Form submission failed");
-      }
-    } catch (e) {
-      console.log("Response wasn't JSON, but request succeeded");
-    }
+      const payload = {
+        ...formData,
+        timestamp: new Date().toISOString()
+      };
 
-    alert("Thank you for your enquiry! We will contact you soon.");
-    setFormData({
-      name: '',
-      phone: '',
-      email: '',
-      product: '',
-      message: ''
-    });
-    setShowForm(false);
-    
-  } catch (error) {
-    console.error("Submission error:", error);
-    const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
-    alert(`There was an error: ${errorMessage}. Please try again or contact us directly at +91 7837888666`);
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+      const formDataEncoded = new URLSearchParams();
+      (Object.entries(payload) as [keyof typeof payload, string][]).forEach(([key, value]) => {
+        formDataEncoded.append(key, value);
+      });
+
+      const scriptUrl = "https://script.google.com/macros/s/AKfycbwo7alFZPoohmj2LVge0gGuXzQ3vp5fCufgIU29JtwTLSaIFvmQILSTgiPsRsaUQgyOng/exec";
+      
+      const response = await fetch(scriptUrl, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formDataEncoded
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+
+      const result = await response.text();
+      console.log("Form submission successful:", result);
+      
+      alert("Thank you for your enquiry! We will contact you soon.");
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        product: '',
+        message: ''
+      });
+      setShowForm(false);
+      
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert(`There was an error. Please try again or contact us directly at +91 7837888666`);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="bg-[#f8f5f2] text-gray-800 font-sans">
@@ -203,7 +207,7 @@ export default function ProductPage() {
                   className="object-cover scale-110"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  priority={index < 2} // Only prioritize first 2 images
+                  priority={index < 2}
                 />
               </div>
 
