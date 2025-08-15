@@ -81,8 +81,8 @@ const Home = () => {
   return (
     <div className="font-sans bg-beige text-dark">
       <Head>
-        <title>Sigma Sand - Kerala's Premium Sand Supplier</title>
-        <meta name="description" content="Kerala's leading supplier of high-quality construction sand including River Sand, M-Sand, P-Sand and Rockdust. Government approved materials with complete documentation." />
+        <title>Sigma Sand - Kerala&apos;s Premium Sand Supplier</title>
+        <meta name="description" content="Kerala&apos;s leading supplier of high-quality construction sand including River Sand, M-Sand, P-Sand and Rockdust. Government approved materials with complete documentation." />
       </Head>
 
       {/* Hero Section */}
@@ -115,7 +115,7 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="text-white text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-lg"
             >
-              Kerala's Premium Sand Supplier
+              Kerala&apos;s Premium Sand Supplier
             </motion.h1>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Home = () => {
                   Since our establishment, Sigma Sand has proudly served as the leading provider of essential construction materials in South Kerala. With our dedication to quality, reliability and customer satisfaction, we have earned a reputation as the go-to supplier for businesses and individuals across five districts.
                 </p>
                 <p className="mb-4">
-                  At Sigma Sand, we understand the critical role that high-quality materials play in any construction project. That's why we are committed to sourcing and supplying only the finest government-approved materials, ensuring your projects are built to last. As a trusted construction material supplier, we control the entire process, guaranteeing timely delivery to your sites. <Link href="/about" className="text-[#742731] font-medium hover:underline hover:text-[#5a1e26] transition-colors">Read more...</Link>
+                  At Sigma Sand, we understand the critical role that high-quality materials play in any construction project. That&apos;s why we are committed to sourcing and supplying only the finest government-approved materials, ensuring your projects are built to last. As a trusted construction material supplier, we control the entire process, guaranteeing timely delivery to your sites. <Link href="/about" className="text-[#742731] font-medium hover:underline hover:text-[#5a1e26] transition-colors">Read more...</Link>
                 </p>
               </div>
 

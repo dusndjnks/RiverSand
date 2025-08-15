@@ -1,11 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true, // Helps catch potential issues in development
+  reactStrictMode: true,
   images: {
-    domains: ["example.com"], // Add allowed image domains
+    domains: ["example.com", "cdn.mywebsite.com"], // add more domains if needed
   },
 };
 
 export default nextConfig;
-
