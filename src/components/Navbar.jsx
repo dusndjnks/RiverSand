@@ -12,7 +12,7 @@ import logo from "../../public/images/sigmasands.webp"; // Place your logo in th
 const NAV_LINKS = [
   { name: "Home", to: "/" },
   { name: "Products", to: "/products" },
-  { name: "About", to: "/about" },
+  { name: "About", to: "/aboutus" },
   { name: "Blogs", to: "/blog" },
 ];
 
