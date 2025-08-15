@@ -82,10 +82,10 @@ export default function AboutPage() {
       >
         <h2 className="text-3xl md:text-4xl font-bold text-[#742731] mb-6">Who We Are</h2>
         <p className="text-lg md:text-xl leading-relaxed text-[#333333] mb-4">
-          We are South Kerala's trusted supplier of quality River Sand and M-Sand for residential, commercial, and infrastructure projects.
+          We are South Kerala&apos;s trusted supplier of quality River Sand and M-Sand for residential, commercial, and infrastructure projects.
         </p>
         <p className="text-lg md:text-xl leading-relaxed text-[#333333]">
-          Whether you're building a dream home or managing large-scale infrastructure, we have the logistics and material to support your goals.
+          Whether you&apos;re building a dream home or managing large-scale infrastructure, we have the logistics and material to support your goals.
         </p>
       </motion.section>
 

@@ -12,7 +12,6 @@ import blog3 from "../../../public/images/blog (3).webp";
 import blog4 from "../../../public/images/blog (4).webp";
 import blog5 from "../../../public/images/blog (5).webp";
 import blog6 from "../../../public/images/blog (6).webp";
-import blog7 from "../../../public/images/blog (7).webp";
 
 interface BlogPost {
   id: number;
