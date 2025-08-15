@@ -25,7 +25,9 @@ export default function ContactPage() {
     "Other",
   ];
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -54,8 +56,12 @@ export default function ContactPage() {
         location: "",
         message: "",
       });
-    } catch (error: any) {
-      console.error("Error!", error.message);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error("Error!", error.message);
+      } else {
+        console.error("Error!", error);
+      }
     }
   };
 
@@ -88,7 +94,7 @@ export default function ContactPage() {
                   Form Submitted Successfully!
                 </h3>
                 <p className="text-sm text-gray-500 mb-6">
-                  Thank you for contacting us. We'll get back to you shortly.
+                  Thank you for contacting us. We&apos;ll get back to you shortly.
                 </p>
                 <div className="flex justify-center">
                   <button
@@ -119,7 +125,7 @@ export default function ContactPage() {
           </h1>
           <div className="w-20 h-1.5 bg-[#742731] mx-auto mb-4"></div>
           <p className="text-lg text-gray-700">
-            We're ready to deliver quality sand to your construction site
+            We&apos;re ready to deliver quality sand to your construction site
           </p>
         </motion.div>
 
