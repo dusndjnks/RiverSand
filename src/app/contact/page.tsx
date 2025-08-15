@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Phone, Mail, Truck, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -97,12 +98,13 @@ export default function ContactPage() {
                   Thank you for contacting us. We&apos;ll get back to you shortly.
                 </p>
                 <div className="flex justify-center">
-                  <button
+                  <Link
+                  href="/"
                     onClick={closeModal}
                     className="px-4 py-2 bg-[#742731] text-white rounded-lg hover:bg-[#5a1e26] transition-colors"
                   >
                     Go to Homepage
-                  </button>
+                  </Link>
                 </div>
               </div>
             </motion.div>
