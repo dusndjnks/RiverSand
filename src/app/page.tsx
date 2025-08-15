@@ -1,4 +1,4 @@
-'use client'; // Mark as a Client Component since we're using hooks and browser APIs
+'use client'; 
 
 import { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
