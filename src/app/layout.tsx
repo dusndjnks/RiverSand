@@ -21,8 +21,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Goldensands",
-  description: "Premium sand supplier",
+  title: "Goldensands by Sigma",
+  description: "Premium sand supplier accross the South kerala",
 };
 
 export default function RootLayout({
