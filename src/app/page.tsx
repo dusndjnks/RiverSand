@@ -90,7 +90,7 @@ const Home = () => {
   return (
     <div className="font-sans bg-beige text-dark">
       <Head>
-        <title>Sigma Sand - Kerala's Trusted Sand Supplier | Quality Construction Materials</title>
+        <title>Sigma Sand - Kerala&apos;s Trusted Sand Supplier | Quality Construction Materials</title>
         <meta name="description" content="Kerala's leading supplier of high-quality construction sand including River Sand, M-Sand, P-Sand and Rockdust. Government approved materials with complete documentation and on-time delivery." />
         <meta name="keywords" content="sand supplier kerala, construction sand, river sand, m-sand, p-sand, rockdust, building materials" />
         <meta property="og:title" content="Sigma Sand - Kerala's Premium Sand Supplier" />
@@ -134,7 +134,7 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg"
             >
-              Kerala's Trusted Construction Sand Supplier
+              Kerala&apos;s Trusted Construction Sand Supplier
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -180,7 +180,7 @@ const Home = () => {
                   Since our establishment, Sigma Sand has proudly served as the leading provider of essential construction materials in South Kerala. With our dedication to quality, reliability and customer satisfaction, we have earned a reputation as the go-to supplier for businesses and individuals across five districts.
                 </p>
                 <p>
-                  At Sigma Sand, we understand the critical role that high-quality materials play in any construction project. That's why we are committed to sourcing and supplying only the finest government-approved materials, ensuring your projects are built to last.
+                  At Sigma Sand, we understand the critical role that high-quality materials play in any construction project. That&apos;s why we are committed to sourcing and supplying only the finest government-approved materials, ensuring your projects are built to last.
                 </p>
                 <p>
                   As a trusted construction material supplier, we control the entire supply chain process, guaranteeing timely delivery to your sites with complete documentation and quality assurance.
