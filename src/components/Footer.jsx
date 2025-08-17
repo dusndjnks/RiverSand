@@ -127,6 +127,8 @@ export default function Footer() {
         </div>
       </div>
 
+      
+
       {/* Footer Bottom */}
       <div className="text-center text-gray-500 text-xs mt-10 border-t border-gray-800 pt-4 space-y-1">
         <p>© 2025 Goldensands. All rights reserved.</p>

@@ -32,8 +32,7 @@ const isActive = (path) => pathname === path;
               src={logo}
               alt="Sigma Sands Logo"
               className="block"
-              height={48}
-              width={120}
+              width={180}
               priority
             />
           </Link>

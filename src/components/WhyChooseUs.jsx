@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
             )}
           </div>
 
-          <div className="md:w-7/12 space-y-6">
+          <div className="md:w-7/12 space-y-6 ">
             {whyChooseUsItems.map((item, index) => (
               <motion.div
                 key={index}
