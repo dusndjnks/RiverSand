@@ -1,10 +1,13 @@
-// next.config.ts
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
+  productionBrowserSourceMaps: false,
+  
   images: {
-    unoptimized: true,  // Needed for static export
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -13,7 +16,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'export',  // For static site generation
+  
+  // (Optional) Internationalization
+  // i18n: {
+  //   locales: ['en', 'hi'],
+  //   defaultLocale: 'en',
+  // },
 }
 
 export default nextConfig

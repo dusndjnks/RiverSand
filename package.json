@@ -4,9 +4,10 @@
   "private": true,
 "scripts": {
   "dev": "next dev",
-  "build": "next build && next-sitemap",
-  "postbuild": "next-sitemap",
-  "start": "next start"
+  "build": "next build",
+  "postbuild": "next-sitemap --config next-sitemap.config.ts",
+  "start": "next start",
+  "generate-sitemap": "next-sitemap --config next-sitemap.config.ts"
 },
   "dependencies": {
     "framer-motion": "^12.23.12",
