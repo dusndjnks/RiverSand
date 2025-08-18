@@ -2,12 +2,8 @@ import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  output: 'export',
-  trailingSlash: true,
-  productionBrowserSourceMaps: false,
-  
   images: {
-    unoptimized: true,
+    unoptimized: true,  // Correct for static export
     remotePatterns: [
       {
         protocol: 'https',
@@ -16,12 +12,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  
-  // (Optional) Internationalization
-  // i18n: {
-  //   locales: ['en', 'hi'],
-  //   defaultLocale: 'en',
-  // },
+  output: 'export',
+  // Add these recommended options:
+  trailingSlash: true, // Ensures consistent URLs in sitemap
+  productionBrowserSourceMaps: false, // Reduces build size
 }
 
 export default nextConfig

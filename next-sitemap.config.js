@@ -1,6 +1,6 @@
-import type { IConfig } from 'next-sitemap'
-
-const config: IConfig = {
+// next-sitemap.config.js
+/** @type {import('next-sitemap').IConfig} */
+const config = {
   siteUrl: 'https://www.sigmasand.in',
   generateRobotsTxt: true,
   outDir: 'out',
@@ -31,4 +31,4 @@ const config: IConfig = {
   }
 }
 
-export default config
+module.exports = config
