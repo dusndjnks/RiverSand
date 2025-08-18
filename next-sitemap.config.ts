@@ -1,60 +1,33 @@
 import type { IConfig } from 'next-sitemap'
 
 const config: IConfig = {
-  // Core Configuration
   siteUrl: 'https://www.sigmasand.in',
-  changefreq: 'weekly',
-  priority: 0.7,
   generateRobotsTxt: true,
-  autoLastmod: true,
-  
-  // Directory Settings (Critical for Static Exports)
-  sourceDir: '.next',
   outDir: 'out',
   
-  // Performance Optimization
-  sitemapSize: 7000,
-  
-  // Security Exclusions
-  exclude: [
-    '/secret-page',
-    '/admin/*',
-    '/api/*',
-    '/404',
-    '/_error',
-    '/_next/*'
+  // Explicitly list all your routes
+  additionalPaths: async () => [
+    { loc: '/', priority: 1.0, lastmod: new Date().toISOString() },
+    { loc: '/aboutus', priority: 0.8 },
+    { loc: '/products', priority: 0.8 },
+    { loc: '/blog', priority: 0.7 },
+    { loc: '/contact', priority: 0.9 }
   ],
-  
-  // Robots.txt Configuration
+
+  // Required for App Router
+  transform: async (config, path) => ({
+    loc: path,
+    changefreq: 'weekly',
+    priority: config.priority,
+    lastmod: new Date().toISOString()
+  }),
+
+  // Other settings...
+  exclude: ['/secret-page', '/api/*'],
   robotsTxtOptions: {
     policies: [
-      {
-        userAgent: '*',
-        allow: '/',
-        disallow: ['/secret', '/admin', '/api']
-      }
-    ],
-    additionalSitemaps: [
-      'https://www.sigmasand.in/sitemap.xml'
-    ],
-  },
-  
-  // Dynamic URL Transformation
-  transform: async (config, path) => {
-    return {
-      loc: path,
-      changefreq: path === '/' ? 'daily' : config.changefreq,
-      priority: path === '/' ? 1.0 : config.priority,
-      lastmod: config.autoLastmod ? new Date().toISOString() : undefined
-    }
-  },
-  
-  // (Optional) For Dynamic Routes
-  additionalPaths: async () => {
-    // Example: Fetch dynamic routes from CMS/API
-    // const products = await fetch('https://api.example.com/products')
-    // return products.map(product => ({ loc: `/products/${product.slug}` }))
-    return []
+      { userAgent: '*', allow: '/' }
+    ]
   }
 }
 
