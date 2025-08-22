@@ -32,13 +32,13 @@ const isActive = (path) => pathname === path;
               src={logo}
               alt="Sigma Sands Logo"
               className="block"
-              width={180}
+              width={200}
               priority
             />
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8 text-[17px] font-medium">
+          <div className="hidden md:flex items-center space-x-8 text-[17px] ">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.name}
