@@ -36,43 +36,43 @@ interface FormData {
 const products: Product[] = [
   {
     title: 'River Sand',
-    description: 'Naturally available sand used for brick work, RCC, and other construction. Washed and filtered for superior quality.',
+    description: 'Licensed river sand for brickwork, RCC, and plastering; washed, screened, and low in silt for clean bonds and smooth finishes across Kerala sites.',
     image: riversand,
     uses: ['Concrete mixing', 'Brickwork', 'Plastering']
   },
   {
     title: 'M-Sand (Manufactured Sand)',
-    description: 'High-quality crushed stone sand with perfect gradation, ideal for concrete and construction applications.',
+    description: 'Crushed stone sand with uniform particles and no clay; ideal for structural concrete and day‑to‑day construction where strength and repeatability matter.',
     image: msand,
     uses: ['Concrete production', 'RCC works', 'Flooring']
   },
   {
     title: 'P-Sand (Plastering Sand)',
-    description: 'Ultra-fine sand specially processed for smooth plaster finishes with excellent workability.',
+    description: 'Fine plastering sand processed for smooth trowel and neat walls; improves workability, reduces cracks, and keeps painters happy.',
     image: psand,
     uses: ['Wall plastering', 'Interior finishes', 'Putty mixing']
   },
   {
     title: '20mm Blue Metal',
-    description: 'Premium quality coarse aggregate for concrete mixes and road construction with excellent compaction.',
+    description: 'Coarse aggregate for strong concrete and stable road layers; compacts well and supports heavy loads in foundations and driveways.',
     image: bluemetal20,
     uses: ['Concrete foundations', 'Road base', 'Drainage systems']
   },
   {
     title: '6mm Blue Metal',
-    description: 'Smaller aggregate size perfect for precast concrete, tiles, and finishing applications.',
+    description: 'Smaller aggregate for precast, tile beds, and fine concrete work; helps achieve tight finishes and detailed edges.',
     image: bluemetal6,
     uses: ['Tile fixing', 'Terrazzo flooring', 'Decorative concrete']
   },
   {
     title: 'Rock Dust',
-    description: 'Fine crushed stone powder ideal for compaction and as a base material for various construction needs.',
+    description: 'Fine stone powder that compacts tight for base prep and fill; a dependable sub‑base under pavers, yards, and pathways.',
     image: rockdust,
     uses: ['Filling material', 'Base preparation', 'Landscaping']
   },
   {
     title: 'Rock Rubble',
-    description: 'Durable and versatile aggregate for foundation works, landscaping, and erosion control with excellent strength.',
+    description: 'Tough, versatile rock for foundations, slope control, and yard design; built to handle weather and wear without fuss.',
     image: rockrubble,
     uses: ['Retaining walls', 'Road embankments', 'Decorative features', 'Drainage systems']
   }
@@ -174,8 +174,10 @@ export default function ProductPage() {
       {/* Hero Section */}
       <section className="py-16 px-4 bg-gradient-to-r from-[#742731] to-[#9a3a47] text-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Golden Sands & Aggregates</h1>
-          <p className="text-xl md:text-2xl opacity-90">High-quality sand and aggregates supplied across South Kerala</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Sigma Sand & Aggregates</h1>
+          <p className="text-xl md:text-2xl opacity-90">
+            Quality sand and aggregates supplied across South Kerala by a licensed team that delivers on time, with clear documents and fair rates.
+          </p>
         </div>
       </section>
 
@@ -185,7 +187,7 @@ export default function ProductPage() {
           <h2 className="text-3xl font-bold text-[#742731] mb-3">Our Premium Products</h2>
           <div className="w-20 h-1 bg-[#742731] mx-auto mb-4"></div>
           <p className="max-w-2xl mx-auto text-gray-600">
-            Quality construction materials for all your building needs
+            Construction materials selected for steady grading and reliable site performance—so mixes behave and finishes come out right.
           </p>
         </div>
 
@@ -358,7 +360,7 @@ export default function ProductPage() {
           <h2 className="text-3xl font-bold text-[#742731] mb-3">Quality Assurance</h2>
           <div className="w-20 h-1 bg-[#742731] mx-auto"></div>
           <p className="max-w-2xl mx-auto mt-4 text-gray-600">
-            All our materials undergo rigorous quality testing to ensure they meet industry standards.
+            Every batch is checked for gradation and cleanliness, so materials meet site specs and pass inspections without delays.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-0 w-full">
@@ -390,7 +392,7 @@ export default function ProductPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">Ready to Order Your Construction Materials?</h2>
           <p className="text-lg opacity-90 mb-8">
-            Contact us today for the best quality sand and aggregates in Kerala.
+            Call or message to schedule licensed river sand and aggregates with on‑time delivery across South Kerala.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

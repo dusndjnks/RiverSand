@@ -67,7 +67,7 @@ export default function AboutPage() {
             transition={{ duration: 0.5 }}
             className="text-[#ffffff] text-4xl md:text-5xl font-bold text-center leading-snug"
           >
-            Reliable Sand Supply <br /> for Every Construction Need
+            Reliable sand supply <br /> for every construction need
           </motion.h1>
         </div>
       </section>
@@ -82,10 +82,10 @@ export default function AboutPage() {
       >
         <h2 className="text-3xl md:text-4xl font-bold text-[#742731] mb-6">Who We Are</h2>
         <p className="text-lg md:text-xl leading-relaxed text-[#333333] mb-4">
-          We are South Kerala&apos;s trusted supplier of quality River Sand and M-Sand for residential, commercial, and infrastructure projects.
+          Sigma Sand is South Kerala’s licensed supplier of river sand and M‑Sand for homes, commercial builds, and public works—clean materials, clear paperwork, and deliveries that land when promised. Whether it’s a first home in Trivandrum or a road job in Kollam, the team moves fast and keeps the site moving.
         </p>
         <p className="text-lg md:text-xl leading-relaxed text-[#333333]">
-          Whether you&apos;re building a dream home or managing large-scale infrastructure, we have the logistics and material to support your goals.
+          Crews rely on steady grading and low‑silt river sand for strong bonds and neat finishes, backed by simple quotes and support that answers the phone. Projects across Pathanamthitta, Alappuzha, and Kottayam get the same care, with routes planned to cut waiting and rework.
         </p>
       </motion.section>
 
@@ -134,10 +134,10 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#d4a373] mb-8">What We Do</h2>
           <ul className="space-y-3 text-lg md:text-xl font-medium text-[#ffffff]">
-            <li>✔️ Supply premium River Sand & M-Sand</li>
-            <li>✔️ On-site delivery with our truck fleet</li>
-            <li>✔️ Ethical sourcing from certified quarries</li>
-            <li>✔️ Support for all South Kerala projects</li>
+            <li>✔️ Supply premium river sand and M‑Sand with consistent grading</li>
+            <li>✔️ On‑site delivery using a coordinated local fleet</li>
+            <li>✔️ Ethical, licensed sourcing with full documentation</li>
+            <li>✔️ Support for residential, commercial, and infrastructure builds across South Kerala</li>
           </ul>
         </div>
       </motion.section>
@@ -152,7 +152,7 @@ export default function AboutPage() {
       >
         <h2 className="text-3xl md:text-4xl font-bold text-[#742731] mb-6">Our Commitment</h2>
         <p className="text-lg md:text-xl leading-relaxed text-[#333333]">
-          We source only from authorized depots and quarries—ensuring proper loading, safe transportation, and quality checks.
+          Materials are sourced only from authorized sites with proper loading, tracked transport, and checks that match site specs—so inspections go smoothly and work doesn’t stall. Each load carries permits, invoice, and details needed for gate entries and audits.
         </p>
       </motion.section>
 
@@ -170,7 +170,7 @@ export default function AboutPage() {
           </h3>
           <div className="w-16 h-1 bg-[#742731] mx-auto mb-4"></div>
           <p className="text-[#6b7280] mb-3">
-            Premium-grade sand sourced from our Kallampalam quarries.
+            Premium‑grade sand is sourced from Kallambalam, with the head office at Vembayam, Kollam—close enough to reach jobs quickly and adjust when plans change.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-4">
             <div className="flex items-center">
@@ -179,7 +179,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center">
               <Truck className="text-[#742731] mr-2" size={16} />
-              <span className="text-sm text-[#333333]">Material Source: Kallampalam</span>
+              <span className="text-sm text-[#333333]">Material Source: Kallambalam</span>
             </div>
           </div>
         </div>
@@ -190,10 +190,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#333333] mb-4">
-              Serving <span className="text-[#742731]">All South Kerala</span>
+              Serving <span className="text-[#742731]">South Kerala</span>
             </h2>
             <p className="text-xl text-[#6b7280] max-w-3xl mx-auto">
-              From urban centers to rural sites — our trucks reach you.
+              From city centers to village sites, trucks cover the district routes daily with planned dispatch and driver call‑ahead. If a pour can’t wait, night drops are arranged.
             </p>
           </div>
 
@@ -201,7 +201,7 @@ export default function AboutPage() {
             {/* Coverage List */}
             <div className="bg-[#ffffff] md:p-6 px-3 py-4 rounded-xl shadow-md">
               <h3 className="text-2xl font-bold text-[#333333] mb-4 text-center">
-                Our Coverage Area
+                Coverage area
               </h3>
               <ul className="grid grid-cols-2 gap-3">
                 {["Trivandrum", "Kollam", "Pathanamthitta", "Alappuzha", "Kottayam"].map((district, i) => (
@@ -218,9 +218,9 @@ export default function AboutPage() {
 
             {/* CTA Box */}
             <div className="bg-[#742731] text-[#ffffff] p-6 rounded-xl shadow-md">
-              <h3 className="text-2xl font-bold mb-4">Ready to Order?</h3>
+              <h3 className="text-2xl font-bold mb-4">Ready to order?</h3>
               <p className="text-[#e5e7eb] mb-6">
-                Get a free quote today.
+                Get a quick quote and delivery slot for licensed river sand and M‑Sand with full paperwork.
               </p>
               <div className="space-y-3">
                 <Link

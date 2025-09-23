@@ -35,23 +35,23 @@ const Home = () => {
   const whyChooseUsItems = [
     {
       icon: (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>),
-      title: "Certified Quality",
-      description: "Government-approved materials meeting all industry standards"
+      title: "Certified quality",
+      description: "Government‑approved materials that meet site specs and pass checks"
     },
     {
       icon: (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>),
-      title: "On-Time Delivery",
-      description: "Guaranteed logistics with real-time tracking"
+      title: "On‑time delivery",
+      description: "Planned routes, quick turnarounds, and night drops when needed"
     },
     {
       icon: (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>),
-      title: "Full Documentation",
-      description: "Complete legal paperwork with every shipment"
+      title: "Full documentation",
+      description: "Invoice, permits, and load details provided with each trip"
     },
     {
       icon: (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>),
-      title: "Competitive Pricing",
-      description: "Best market rates with volume discounts"
+      title: "Fair pricing",
+      description: "Clear quotes and market‑linked rates with room for volume deals"
     }
   ];
 
@@ -59,22 +59,22 @@ const Home = () => {
     {
       title: "River Sand",
       image: riversand,
-      description: "Naturally sourced sand ideal for plastering and brickwork. Offers excellent binding strength, fine texture, and minimal impurities. Preferred for residential and commercial plaster finish jobs.",
+      description: "Licensed river sand with low silt and a fine feel that helps plaster sit right and bonds brickwork well; a dependable choice across Kerala sites.",
     },
     {
       title: "M-Sand",
       image: msand,
-      description: "Crushed stone sand specially manufactured for load-bearing concrete mixes. Free from silt and clay, M-Sand provides high compressive strength and uniform particle size, making it ideal for RCC and block works.",
+      description: "Crushed stone sand with uniform size and no clay—made for RCC, blocks, and precast where strength and repeatable mixes matter.",
     },
     {
       title: "P-Sand",
       image: psand,
-      description: "Finely graded plastering sand with ultra-smooth particles for flawless wall finishing and tile laying. P-Sand ensures better cohesion, crack resistance, and superior workability for internal and external rendering.",
+      description: "Fine plastering sand for neat finishes and fewer cracks; flows well, trowels clean, and makes wall work simpler.",
     },
     {
       title: "Rockdust",
       image: rockdust,
-      description: "High-grade stone powder used as a compactable base material for paving, concrete sub-layers, and soil conditioning. Rockdust offers excellent compaction, improved load distribution, and is a sustainable alternative to traditional fillers.",
+      description: "Stone powder for base layers and paving; compacts tight, spreads even, and helps carry load without fuss.",
     },
   ];
 
@@ -115,7 +115,7 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="text-white text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-lg"
             >
-              Kerala&apos;s Premium Sand Supplier
+              Kerala’s licensed river sand supplier
             </motion.h1>
           </div>
         </div>
@@ -146,13 +146,12 @@ const Home = () => {
               <h2 className="text-3xl font-bold text-[#742731] mb-6">
                 About Sigma Sand
               </h2>
-              
               <div className="text-gray-700 mb-6">
                 <p className="mb-4">
-                  Since our establishment, Sigma Sand has proudly served as the leading provider of essential construction materials in South Kerala. With our dedication to quality, reliability and customer satisfaction, we have earned a reputation as the go-to supplier for businesses and individuals across five districts.
+                  Sigma Sand supplies government‑approved river sand and building materials across South Kerala with a simple promise: honest rates, clean materials, and deliveries that show up when planned. Work happens across Trivandrum, Kollam, Pathanamthitta, Alappuzha, and Kottayam, with paperwork sorted before the truck reaches the gate.
                 </p>
                 <p className="mb-4">
-                  At Sigma Sand, we understand the critical role that high-quality materials play in any construction project. That&apos;s why we are committed to sourcing and supplying only the finest government-approved materials, ensuring your projects are built to last. As a trusted construction material supplier, we control the entire process, guaranteeing timely delivery to your sites. <Link href="/aboutus" className="text-[#742731] font-medium hover:underline hover:text-[#5a1e26] transition-colors">Read more...</Link>
+                  Every load is screened and graded so mixes stay consistent and plastering stays smooth. Because the team handles licensed sourcing and transport end‑to‑end, there’s less chasing and fewer surprises on site. <Link href="/aboutus" className="text-[#742731] font-medium hover:underline hover:text-[#5a1e26] transition-colors">Read more...</Link>
                 </p>
               </div>
 
@@ -187,7 +186,7 @@ const Home = () => {
               </h2>
               <div className="w-20 h-1 bg-[#742731] mb-3" />
               <p className="text-gray-600 max-w-2xl">
-                Select from a curated range of high-quality sands — precisely graded and processed to meet the most demanding construction, plastering, and filling needs.
+                Pick the sand that fits the job—concrete, brickwork, or a clean finish for plaster—each grade kept steady so the work goes as planned.
               </p>
             </div>
             <Link
@@ -217,9 +216,9 @@ const Home = () => {
                     fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent p-4 flex items-end">
-                    <h3 className="text-lg font-semibold text-white drop-shadow-md">
+                    <h2 className="text-lg font-semibold text-white drop-shadow-md">
                       {product.title}
-                    </h3>
+                    </h2>
                   </div>
                 </div>
                 <div className="p-5">
@@ -245,10 +244,10 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center gap-10">
             <div className="md:w-5/12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Why <span className="text-[#742731]">Choose Our</span> Sand
+                Why <span className="text-[#742731]">choose our</span> sand
               </h2>
               <p className="text-gray-300 mb-8">
-                Trusted by construction firms and contractors across Kerala for premium quality and reliable service.
+                Builders stick with the team for licensed sourcing, steady grading, and deliveries that don’t slip.
               </p>
               <>
                 {showForm && <ContactForm />}
@@ -283,9 +282,75 @@ const Home = () => {
         </div>
       </motion.section>
 
-      <ServicesSection />
-      <BlogPost />
-      <Reviews />
+      <ServicesSection
+        title="What we do"
+        description="End‑to‑end supply of licensed river sand and reliable alternatives for day‑to‑day construction needs."
+        items={[
+          {
+            title: "Premium materials",
+            description: "Curated sand grades and building aggregates that stay consistent"
+          },
+          {
+            title: "Practical guidance",
+            description: "Help with picking the right sand for mixes, plaster, and finishes"
+          },
+          {
+            title: "Delivery done right",
+            description: "A dependable fleet, scheduled dispatch, and site‑wise coordination"
+          },
+          {
+            title: "South Kerala coverage",
+            description: "District‑wise fulfillment with local support when issues pop up"
+          },
+          {
+            title: "Equipment access",
+            description: "Well‑kept machinery available on flexible terms when required"
+          },
+          {
+            title: "Ongoing support",
+            description: "Straightforward help through ordering, delivery, and documents"
+          }
+        ]}
+      />
+
+      <BlogPost
+        title="Latest from our blog"
+        posts={[
+          {
+            title: "Choosing the Right Sand for Your Construction",
+            description: "A quick guide to where river sand, M‑Sand, and P‑Sand fit—and how they change strength and finish.",
+            date: "May 15, 2023",
+            link: "/blog/choosing-right-sand"
+          },
+          {
+            title: "Sustainable Sand Mining Practices",
+            description: "What compliant sourcing looks like on the ground and why it protects quality and timelines.",
+            date: "April 28, 2023",
+            link: "/blog/sustainable-sand-mining"
+          }
+        ]}
+      />
+
+      <Reviews
+        testimonials={[
+          {
+            quote: "The only supplier that sends full paperwork with each load—less chasing, fewer delays.",
+            author: "Deepa Raj, Raj Builders, Kollam"
+          },
+          {
+            quote: "When the pour was tight, Sigma Sand arranged night drops and kept the schedule.",
+            author: "Faisal K, Horizon Developments, Pathanamthitta"
+          },
+          {
+            quote: "After checking a few options, Sigma Sand had the right quality at a sensible rate.",
+            author: "Sreejith V, Varma Associates, Kottayam"
+          },
+          {
+            quote: "For three years now, their licensed river sand has been steady—no surprises.",
+            author: "Ajay Menon, Menon Constructions, Trivandrum"
+          }
+        ]}
+      />
 
       {/* Final CTA */}
       <motion.section
@@ -315,7 +380,7 @@ const Home = () => {
               rel="noopener noreferrer" 
               className="border-2 border-white text-white hover:bg-white/10 px-10 py-4 rounded-md font-medium text-lg transition-colors"
             >
-              Visit: Vadakottukavu, NH Road Kallambalam
+              Visit: Vadakottukavu, NH Road, Kallambalam
             </a>
           </div>
         </div>
