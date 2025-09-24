@@ -21,9 +21,25 @@ const playfair = Playfair_Display({
   variable: "--font-display",
 });
 
-export const metadata: Metadata = {
-  title: "Goldensands by Sigma",
-  description: "Premium sand supplier accross the South kerala",
+export const metadata = {
+  title: 'Sigma Sand | Premium M-Sand & River Sand in Kerala',
+  description: 'Your trusted source for premium, government-approved construction sand in Kerala. We offer M-Sand, P-Sand, and River Sand with guaranteed timely delivery.',
+  openGraph: {
+    title: 'Sigma Sand | Premium M-Sand & River Sand in Kerala',
+    description: 'Your trusted source for premium, government-approved construction sand in Kerala. We offer M-Sand, P-Sand, and River Sand with guaranteed timely delivery.',
+    url: 'https://www.sigmasand.in/',
+    siteName: 'Sigma Sand',
+    type: 'website',
+    // You can add an image URL here for social media previews
+    // images: ['https://www.sigmasand.in/og-image.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sigma Sand | Premium M-Sand & River Sand in Kerala',
+    description: 'Your trusted source for premium, government-approved construction sand in Kerala. We offer M-Sand, P-Sand, and River Sand with guaranteed timely delivery.',
+    // You can add an image URL here for Twitter previews
+    // images: ['https://www.sigmasand.in/twitter-image.png'],
+  },
 };
 
 export default function RootLayout({
