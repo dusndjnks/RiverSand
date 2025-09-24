@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
         {/* Company Info */}
         <div>
-          <h3 className="text-xl font-bold mb-3">Goldensands</h3>
+          <h3 className="text-xl font-bold mb-3">Sigmasands</h3>
           <p className="text-gray-400 mb-4">
             Premium sand supplier since 2005, delivering high-quality sand for
             construction and landscaping across regions with reliability and
@@ -113,25 +113,23 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-3">Location</h4>
           <div className="w-full h-48 md:h-32 lg:h-40 overflow-hidden rounded-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d63094.8926464074!2d76.82741309925844!3d8.74547434269508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDQnMjYuOCJOIDc2wrA0OScxMy44IkU!5e0!3m2!1sen!2sin!4v1755789464554!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Google Map Location"
-          ></iframe>
-        </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.4835209235!2d76.8202561!3d8.7404926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05e9eb6e89e769%3A0x69d4799f07e074b6!2sSigma%20sand!5e0!3m2!1sen!2sin!4v1758681830614!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map Location"
+            ></iframe>
+          </div>
         </div>
       </div>
 
-      
-
       {/* Footer Bottom */}
       <div className="text-center text-gray-500 text-xs mt-10 border-t border-gray-800 pt-4 space-y-1">
-        <p>© 2025 Goldensands. All rights reserved.</p>
+        <p>© 2025 Sigmasands. All rights reserved.</p>
         <a
           href="https://divegrid.in/"
           target="_blank"

@@ -8,7 +8,7 @@ const reviews = [
     name: "Ajay Menon",
     company: "Menon Constructions",
     location: "Trivandrum",
-    review: "Golden Sands has been our exclusive sand supplier for 3 years. Their river sand quality is unmatched in South Kerala."
+    review: "Sigma Sands has been our exclusive sand supplier for 3 years. Their river sand quality is unmatched in South Kerala."
   },
   {
     name: "Deepa Raj",
@@ -20,13 +20,13 @@ const reviews = [
     name: "Faisal K",
     company: "Horizon Developments",
     location: "Pathanamthitta",
-    review: "When we had an urgent project deadline, Golden Sands arranged night deliveries to keep us on schedule."
+    review: "When we had an urgent project deadline, Sigma Sands arranged night deliveries to keep us on schedule."
   },
   {
     name: "Sreejith V",
     company: "Varma Associates",
     location: "Kottayam",
-    review: "Compared to 5 other suppliers, Golden Sands offered the best combination of price and quality for our township project."
+    review: "Compared to 5 other suppliers, Sigma Sands offered the best combination of price and quality for our township project."
   }
 ];
 
