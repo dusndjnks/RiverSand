@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Whatsapp from "@/components/whatsapp"
 
 // Google Fonts setup
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
         className={`${inter.variable} ${poppins.variable} ${playfair.variable} antialiased`}
       >
         <Navbar />
+        <Whatsapp />
         <main>{children}</main>
         <Footer />
       </body>
